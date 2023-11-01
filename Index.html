@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <main>
+    <div class="step description">
+        <header class="section-title">Decipher the message</header>
+        <p class="para"><b>ROT15</b>, which is a simple letter substitution cipher that replaces a letter with the 15th letter after it, in the alphabet.</p>
+    </div>
+            
+<div class="txtarea_forcode">
+    <label id="coded-label" for="coded-message">The message</label> 
+    <textarea id="txt"  onkeyup="update()" onchange="update()" autofocus placeholder="Type the message here"></textarea>
+</div>
+  <br>
+  
+    <p>   
+        <select id="rot" onchange="update()">
+            <option value="15">ROT15</option>
+        </select>
+    </p>
+
+<h2 class="resultTxt">Result:</h2>
+    <div class="resultDiv"><p id='result'></p></div>
+
+
+</main>
+<script src="Java.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
